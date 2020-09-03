@@ -9,17 +9,27 @@
     <form action="welcom.html" method="">
       <fieldset>
         <legend align="center">Registration form</legend>
-        <label>Name : </label>
-        <input
-          name="uName"
-          type="text"
-          placeholder="username"
-          title="Lorem ipsum dolor sit"
-        />
-        <br />
-        <label>Password : </label>
-        <input name="pass" type="password" placeholder="password" />
-        <br />
+        <table>
+          <tr>
+            <td><label>Name </label></td>
+            <td>
+              :
+              <input
+                name="uName"
+                type="text"
+                placeholder="username"
+                title="Lorem ipsum dolor sit"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Password </label></td>
+            <td>
+              : <input name="pass" type="password" placeholder="password" />
+            </td>
+          </tr>
+        </table>
+
         <label>Color: </label>
         <input type="color" />
         <br />
@@ -57,6 +67,10 @@
         </select>
         <br />
         <input type="submit" />
+        <br />
+        <input type="reset" />
+        <br />
+        <input type="button" value="EDIT" />
       </fieldset>
     </form>
   </body>
