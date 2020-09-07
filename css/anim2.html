@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: grey;
+        /* animation-name: my-new-anim; */
+        /* animation-duration: 5s; */
+        position: absolute;
+
+        animation: my-new-anim 5s;
+      }
+
+      @keyframes my-new-anim {
+        0% {
+          background-color: grey;
+          top: 5px;
+          left: 5px;
+        }
+
+        20% {
+          background-color: blue;
+          top: 10px;
+          left: 10px;
+        }
+
+        40% {
+          background-color: red;
+          top: 15px;
+          left: 15px;
+        }
+
+        60% {
+          background-color: yellowgreen;
+          top: 20px;
+          left: 20px;
+        }
+
+        80% {
+          background-color: hotpink;
+          top: 25px;
+          left: 25px;
+        }
+
+        100% {
+          background-color: green;
+          top: 30px;
+          left: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: pink;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      img {
+        display: none;
+      }
+
+      @media screen and (min-width: 480px) {
+        body {
+          background-color: lightgreen;
+        }
+
+        h1 {
+          font-size: 30px;
+        }
+
+        img {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://www.freepnglogos.com/uploads/instagram-logos-png-images-free-download-2.png"
+      width="300px"
+    />
+    <h1>Resize the browser window to see the effect!</h1>
+    <p>
+      The media query will only apply if the media type is screen and the
+      viewport is 480px wide or wider.
+    </p>
+  </body>
+</html>
