@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       .cls {
         border: 1px solid silver;
         height: 450px;
@@ -40,22 +43,44 @@
         padding: 5px;
         margin: 2px;
         border-radius: 5px;
+        background-color: white;
+        box-shadow: 3px 3px 6px orangered;
+      }
+
+      .menu {
+        position: fixed;
+        right: 50px;
+      }
+
+      li:hover {
+        color: red;
+        box-shadow: 0px 0px 3px red;
       }
     </style>
   </head>
   <body>
     <div class="cls header-footer" id="div1">
-      <ul class="menu">
-        <li>Home</li>
-        <li>Contact-us</li>
-        <li>Products</li>
-        <li>Help</li>
-      </ul>
+      <div>
+        <ul class="menu">
+          <li>Home</li>
+          <a href="#div3">
+            <li>Contact-us</li>
+          </a>
+          <a href="#div5">
+            <li>Products</li>
+          </a>
+          <li>Help</li>
+        </ul>
+      </div>
     </div>
     <div class="cls" id="div2">2</div>
-    <div class="cls" id="div3">3</div>
+    <div class="cls" id="div3">
+      <h1>Contact-us</h1>
+    </div>
     <div class="cls" id="div4">4</div>
-    <div class="cls" id="div5">5</div>
+    <div class="cls" id="div5">
+      <h1>Products</h1>
+    </div>
     <div class="cls" id="div6">6</div>
     <div class="cls header-footer" id="div7">7</div>
   </body>
